@@ -1,0 +1,212 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e
+// command took 1,51s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e
+// command took 2,77s and exited with 0
+// ***** Done, took 00:00:04 (4.38 sec)   *****
+// Found 2 benchmarks:
+//   SortsCompare.BubbleSort: DefaultJob
+//   SortsCompare.QuickSort: DefaultJob
+
+// **************************
+// Benchmark: SortsCompare.BubbleSort: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "2ee84d45-cfaf-4f34-b23f-efa75026ce2e.dll" --benchmarkName "MyBenchmarks.SortsCompare.BubbleSort" --job "Default" --benchmarkId 0 in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 265500.00 ns, 265.5000 us/op
+WorkloadJitting  1: 1 op, 694800.00 ns, 694.8000 us/op
+
+OverheadJitting  2: 16 op, 378900.00 ns, 23.6812 us/op
+WorkloadJitting  2: 16 op, 501400.00 ns, 31.3375 us/op
+
+WorkloadPilot    1: 16 op, 69300.00 ns, 4.3312 us/op
+WorkloadPilot    2: 32 op, 170600.00 ns, 5.3312 us/op
+WorkloadPilot    3: 64 op, 353500.00 ns, 5.5234 us/op
+WorkloadPilot    4: 128 op, 792800.00 ns, 6.1937 us/op
+WorkloadPilot    5: 256 op, 1100900.00 ns, 4.3004 us/op
+WorkloadPilot    6: 512 op, 2197400.00 ns, 4.2918 us/op
+WorkloadPilot    7: 1024 op, 4947100.00 ns, 4.8312 us/op
+WorkloadPilot    8: 2048 op, 9346900.00 ns, 4.5639 us/op
+WorkloadPilot    9: 4096 op, 19639000.00 ns, 4.7947 us/op
+WorkloadPilot   10: 8192 op, 36479200.00 ns, 4.4530 us/op
+WorkloadPilot   11: 16384 op, 69962300.00 ns, 4.2702 us/op
+WorkloadPilot   12: 32768 op, 137048200.00 ns, 4.1824 us/op
+WorkloadPilot   13: 65536 op, 263563300.00 ns, 4.0217 us/op
+WorkloadPilot   14: 131072 op, 519034000.00 ns, 3.9599 us/op
+
+OverheadWarmup   1: 131072 op, 631800.00 ns, 4.8203 ns/op
+OverheadWarmup   2: 131072 op, 443100.00 ns, 3.3806 ns/op
+OverheadWarmup   3: 131072 op, 621400.00 ns, 4.7409 ns/op
+OverheadWarmup   4: 131072 op, 651200.00 ns, 4.9683 ns/op
+OverheadWarmup   5: 131072 op, 688600.00 ns, 5.2536 ns/op
+OverheadWarmup   6: 131072 op, 454200.00 ns, 3.4653 ns/op
+OverheadWarmup   7: 131072 op, 539600.00 ns, 4.1168 ns/op
+OverheadWarmup   8: 131072 op, 462400.00 ns, 3.5278 ns/op
+
+OverheadActual   1: 131072 op, 494900.00 ns, 3.7758 ns/op
+OverheadActual   2: 131072 op, 479100.00 ns, 3.6552 ns/op
+OverheadActual   3: 131072 op, 480600.00 ns, 3.6667 ns/op
+OverheadActual   4: 131072 op, 490900.00 ns, 3.7453 ns/op
+OverheadActual   5: 131072 op, 455800.00 ns, 3.4775 ns/op
+OverheadActual   6: 131072 op, 447100.00 ns, 3.4111 ns/op
+OverheadActual   7: 131072 op, 395500.00 ns, 3.0174 ns/op
+OverheadActual   8: 131072 op, 406900.00 ns, 3.1044 ns/op
+OverheadActual   9: 131072 op, 466500.00 ns, 3.5591 ns/op
+OverheadActual  10: 131072 op, 426800.00 ns, 3.2562 ns/op
+OverheadActual  11: 131072 op, 472400.00 ns, 3.6041 ns/op
+OverheadActual  12: 131072 op, 409600.00 ns, 3.1250 ns/op
+OverheadActual  13: 131072 op, 439900.00 ns, 3.3562 ns/op
+OverheadActual  14: 131072 op, 408000.00 ns, 3.1128 ns/op
+OverheadActual  15: 131072 op, 478500.00 ns, 3.6507 ns/op
+OverheadActual  16: 131072 op, 407500.00 ns, 3.1090 ns/op
+OverheadActual  17: 131072 op, 469000.00 ns, 3.5782 ns/op
+OverheadActual  18: 131072 op, 443600.00 ns, 3.3844 ns/op
+OverheadActual  19: 131072 op, 409300.00 ns, 3.1227 ns/op
+OverheadActual  20: 131072 op, 593200.00 ns, 4.5258 ns/op
+
+WorkloadWarmup   1: 131072 op, 518941300.00 ns, 3.9592 us/op
+WorkloadWarmup   2: 131072 op, 534791300.00 ns, 4.0801 us/op
+WorkloadWarmup   3: 131072 op, 519564900.00 ns, 3.9640 us/op
+WorkloadWarmup   4: 131072 op, 513353300.00 ns, 3.9166 us/op
+WorkloadWarmup   5: 131072 op, 533991600.00 ns, 4.0740 us/op
+WorkloadWarmup   6: 131072 op, 529463600.00 ns, 4.0395 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 131072 op, 531829500.00 ns, 4.0575 us/op
+WorkloadActual   2: 131072 op, 517618000.00 ns, 3.9491 us/op
+WorkloadActual   3: 131072 op, 529787000.00 ns, 4.0420 us/op
+WorkloadActual   4: 131072 op, 514279600.00 ns, 3.9236 us/op
+WorkloadActual   5: 131072 op, 514503900.00 ns, 3.9254 us/op
+WorkloadActual   6: 131072 op, 532198900.00 ns, 4.0604 us/op
+WorkloadActual   7: 131072 op, 521554600.00 ns, 3.9791 us/op
+WorkloadActual   8: 131072 op, 524677400.00 ns, 4.0030 us/op
+WorkloadActual   9: 131072 op, 527083200.00 ns, 4.0213 us/op
+WorkloadActual  10: 131072 op, 520123900.00 ns, 3.9682 us/op
+WorkloadActual  11: 131072 op, 524916900.00 ns, 4.0048 us/op
+WorkloadActual  12: 131072 op, 514673900.00 ns, 3.9267 us/op
+WorkloadActual  13: 131072 op, 513621100.00 ns, 3.9186 us/op
+WorkloadActual  14: 131072 op, 513355800.00 ns, 3.9166 us/op
+WorkloadActual  15: 131072 op, 526179400.00 ns, 4.0144 us/op
+
+// AfterActualRun
+WorkloadResult   1: 131072 op, 531378050.00 ns, 4.0541 us/op
+WorkloadResult   2: 131072 op, 517166550.00 ns, 3.9457 us/op
+WorkloadResult   3: 131072 op, 529335550.00 ns, 4.0385 us/op
+WorkloadResult   4: 131072 op, 513828150.00 ns, 3.9202 us/op
+WorkloadResult   5: 131072 op, 514052450.00 ns, 3.9219 us/op
+WorkloadResult   6: 131072 op, 531747450.00 ns, 4.0569 us/op
+WorkloadResult   7: 131072 op, 521103150.00 ns, 3.9757 us/op
+WorkloadResult   8: 131072 op, 524225950.00 ns, 3.9995 us/op
+WorkloadResult   9: 131072 op, 526631750.00 ns, 4.0179 us/op
+WorkloadResult  10: 131072 op, 519672450.00 ns, 3.9648 us/op
+WorkloadResult  11: 131072 op, 524465450.00 ns, 4.0014 us/op
+WorkloadResult  12: 131072 op, 514222450.00 ns, 3.9232 us/op
+WorkloadResult  13: 131072 op, 513169650.00 ns, 3.9152 us/op
+WorkloadResult  14: 131072 op, 512904350.00 ns, 3.9131 us/op
+WorkloadResult  15: 131072 op, 525727950.00 ns, 4.0110 us/op
+
+// AfterAll
+// Benchmark Process 7616 has exited with code 0.
+
+Mean = 3.977 μs, StdErr = 0.013 μs (0.34%), N = 15, StdDev = 0.052 μs
+Min = 3.913 μs, Q1 = 3.923 μs, Median = 3.976 μs, Q3 = 4.014 μs, Max = 4.057 μs
+IQR = 0.092 μs, LowerFence = 3.785 μs, UpperFence = 4.152 μs
+ConfidenceInterval = [3.921 μs; 4.033 μs] (CI 99.9%), Margin = 0.056 μs (1.40% of Mean)
+Skewness = 0.13, Kurtosis = 1.39, MValue = 2
+
+// **************************
+// Benchmark: SortsCompare.QuickSort: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "2ee84d45-cfaf-4f34-b23f-efa75026ce2e.dll" --benchmarkName "MyBenchmarks.SortsCompare.QuickSort" --job "Default" --benchmarkId 1 in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 199000.00 ns, 199.0000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at MyBenchmarks.Sort.Partition(Int64[] arr, Int64 left, Int64 right) in C:\Users\en9er\source\repos\Benchmark\Benchmark\Program.cs:line 37
+   at MyBenchmarks.Sort.QuickSortFunction(Int64[] arr, Int64 left, Int64 right) in C:\Users\en9er\source\repos\Benchmark\Benchmark\Program.cs:line 65
+   at MyBenchmarks.Sort.QuickSort(Int64[] data, Int64 left, Int64 right) in C:\Users\en9er\source\repos\Benchmark\Benchmark\Program.cs:line 86
+   at MyBenchmarks.SortsCompare.QuickSort() in C:\Users\en9er\source\repos\Benchmark\Benchmark\Program.cs:line 109
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e\2ee84d45-cfaf-4f34-b23f-efa75026ce2e.notcs:line 1574
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e\2ee84d45-cfaf-4f34-b23f-efa75026ce2e.notcs:line 900
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\en9er\source\repos\Benchmark\Benchmark\bin\Release\net6.0\2ee84d45-cfaf-4f34-b23f-efa75026ce2e\2ee84d45-cfaf-4f34-b23f-efa75026ce2e.notcs:line 52
+// AfterAll
+// Benchmark Process 6704 has exited with code -1.
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\MyBenchmarks.SortsCompare-report.csv
+  BenchmarkDotNet.Artifacts\results\MyBenchmarks.SortsCompare-report-github.md
+  BenchmarkDotNet.Artifacts\results\MyBenchmarks.SortsCompare-report.html
+
+// * Detailed results *
+SortsCompare.BubbleSort: DefaultJob
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.977 μs, StdErr = 0.013 μs (0.34%), N = 15, StdDev = 0.052 μs
+Min = 3.913 μs, Q1 = 3.923 μs, Median = 3.976 μs, Q3 = 4.014 μs, Max = 4.057 μs
+IQR = 0.092 μs, LowerFence = 3.785 μs, UpperFence = 4.152 μs
+ConfidenceInterval = [3.921 μs; 4.033 μs] (CI 99.9%), Margin = 0.056 μs (1.40% of Mean)
+Skewness = 0.13, Kurtosis = 1.39, MValue = 2
+-------------------- Histogram --------------------
+[3.900 μs ; 4.067 μs) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+SortsCompare.QuickSort: DefaultJob
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1526 (21H1/May2021Update)
+AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+  DefaultJob : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+
+
+|     Method |     Mean |     Error |    StdDev |
+|----------- |---------:|----------:|----------:|
+| BubbleSort | 3.977 μs | 0.0559 μs | 0.0523 μs |
+|  QuickSort |       NA |        NA |        NA |
+
+Benchmarks with issues:
+  SortsCompare.QuickSort: DefaultJob
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 μs   : 1 Microsecond (0.000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:12 (12.98 sec), executed benchmarks: 2
+
+Global total time: 00:00:17 (17.37 sec), executed benchmarks: 2
+// * Artifacts cleanup *

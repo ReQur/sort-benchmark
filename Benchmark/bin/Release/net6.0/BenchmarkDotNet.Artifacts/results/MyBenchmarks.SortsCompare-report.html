@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmarks.SortsCompare-20220502-203544</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1526 (21H1/May2021Update)
+AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+  DefaultJob : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th> Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
+</tr>
+</thead><tbody><tr><td>SelectionSort</td><td>658.571 &mu;s</td><td>31.1579 &mu;s</td><td>91.8696 &mu;s</td><td>636.666 &mu;s</td>
+</tr><tr><td>BubbleSort</td><td>665.016 &mu;s</td><td>33.5596 &mu;s</td><td>98.9511 &mu;s</td><td>653.481 &mu;s</td>
+</tr><tr><td>BuiltInSort</td><td>7.644 &mu;s</td><td>0.2550 &mu;s</td><td>0.6537 &mu;s</td><td>7.970 &mu;s</td>
+</tr></tbody></table>
+</body>
+</html>
